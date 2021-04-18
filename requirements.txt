@@ -3,3 +3,4 @@ numpy>=1.15.4
 pandas
 matplotlib
 jupyter
+scikit-learn
