@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+
+
+\linespread{1.3}
+
+
+\title{Machine Learning from Data: Homework 3 - Probabilities}
+\author{227367455 and 323081950}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\section*{Question 1}
+
+\end{center}
+Given a random sample $\lbrace x_1 , x_2 , ... , x_n \rbrace$, derive the
+ maximum likelihood estimator $\hat{p}$ of the Binomial distribution. \\
+
+\begin{center}
+$ B(x,p) = \binom{n}{x} p^x (1-p)^{n-x}$ 
+\end{center} 
+
+We first want to calculate the likelihood: \\
+
+$ L = P(x_1,...x_n \mid p) =  \prod^{n}_{i = 1} P(x_i \mid p) $ \\
+
+$ =  \prod^{n}_{i = 1} \binom{n}{x_i} p^{x_i} (1-p)^{n-x_i} $ \\
+
+$ = \prod^{n}_{i = 1} p^{x_i} (1-p)^{n-x_i}  \prod^{n}_{i = 1} \binom{n}{x_i}  $ \\
+
+$ = p^{\sum^{n}_{i = 1} x_i} (1-p)^{n^2 - \sum^{n}_{i = 1} x_i}  \prod^{n}_{i = 1} \binom{n}{x_i} $ \\
+
+\newpage
+
+From the likelihood we calculate the log-likelihood: \\
+
+$ ln(L) = ln(p^{\sum^{n}_{i = 1} x_i} (1-p)^{n^2 - \sum^{n}_{i = 1} x_i}  \prod^{n}_{i = 1} \binom{n}{x_i}) $ \\
+
+$ =  ln(p^{\sum^{n}_{i = 1} x_i}) + ln( (1-p)^{n^2 - \sum^{n}_{i = 1} x_i}) + ln(\prod^{n}_{i = 1} \binom{n}{x_i})  $ \\
+
+$ = ln(p) \sum^{n}_{i = 1} x_i + ln( 1-p) (n^2 - \sum^{n}_{i = 1} x_i) +  \sum^{n}_{i = 1} ln(\binom{n}{x_i})$ \\
+
+We will take the derivative in respect to $p$ our given value: \\
+
+$\dfrac{\partial[ln(L) ]}{\partial p} = \dfrac{\partial[ ln(p) \sum^{n}_{i = 1} x_i  ]}{\partial p} + \dfrac{\partial[ ln( 1-p) (n^2 - \sum^{n}_{i = 1} x_i)]}{\partial p} $ \\ 
+
+$ = \dfrac{\sum^{n}_{i = 1} x_i  }{p} - \dfrac{ (n^2 - \sum^{n}_{i = 1} x_i) }{1 - p} $ \\
+
+To find the a maximum we set the derivative to 0 obtaining: \\
+
+$  \dfrac{\sum^{n}_{i = 1} x_i  }{p} - \dfrac{ n^2 - \sum^{n}_{i = 1} x_i }{1 - p} = 0 $ \\
+
+$ (1-p)\sum^{n}_{i = 1} x_i - p (n^2 - \sum^{n}_{i = 1} x_i) = 0 $ \\
+
+$ \sum^{n}_{i = 1} x_i  - p\sum^{n}_{i = 1} x_i - pn^2 + p \sum^{n}_{i = 1} x_i) = 0 $ \\
+
+$ \sum^{n}_{i = 1} x_i  - pn^2 + = 0 $ \\
+
+$ pn^2 = \sum^{n}_{i = 1} x_i  $ \\
+
+Thus we obtain: 
+
+\begin{center}
+$ \hat{p} = \dfrac{\sum^{n}_{i = 1} x_i}{n^2} $
+\end{center}
+
+
+
+\newpage
+\section*{Question 2}
+
+A student wants to know her chances to pass and fail an exam if she studies and if she doesn't study.
+From last year's results, she sees that
+$P(Pass) = 60\%$.
+She also found out that 
+$P(Studied \mid Pass) = 95\%$, 
+$P(Studied \mid Failed) = 60\%$. 
+You can assume that every student either studied or didn't study, and either passed or failed.
+
+\subsection*{a.}
+What is her probability of passing the exam if she studies?\\
+
+$P(Pass| Studied) = \dfrac{P(Studied \mid Pass)P(Pass)}{P(Studied)}$
+\subsection*{b.}
+
+What is her probability of passing if she doesn't study? \\
+
+$P(Pass \mid \overline{Studied}) = \dfrac{P(\overline{Studied} \mid Pass)P(Pass)}{P(\overline{Studied})}$
+
+
+
+\newpage
+\section*{Question 3}
+
+\subsection*{a.}
+\subsection*{b.}
+\subsection*{c.}
+\subsubsection*{i.}
+\subsubsection*{ii.}
+\subsubsection*{iii.}
+
+\newpage
+\section*{Question 4}
+
+\subsection*{a.} 
+\subsection*{b.}
+\subsection*{c.}
+\subsection*{d.}
+    
+\end{document}
