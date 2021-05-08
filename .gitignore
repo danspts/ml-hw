@@ -2,3 +2,10 @@
 venv
 venv.*
 .idea/
+hw2/.DS_Store
+hw2/.ipynb_checkpoints/.DS_Store
+hw3/.ipynb_checkpoints/
+hw3/ex3.aux
+hw3/ex3.log
+hw3/ex3.synctex.gz
+trash/
