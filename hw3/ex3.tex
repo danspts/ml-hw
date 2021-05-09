@@ -128,8 +128,20 @@ d) The following conditions hold:
 
 \tab iii.  $ P(C=0) = 0.3$\\
 
-$ C \sim B(1, 0.7) $
+Z is a random variable with the following distribution:
 
+$ P(Z = 2) = \frac{1}{7} $
+
+$ P(Z = 3) = \frac{3}{7} $
+
+$ P(Z = 10) = \frac{3}{7} $
+
+
+$ X = ZC + 3 $
+
+$ Y = \left \lfloor{\frac{2}{3}Z(2-C)}\right \rfloor + 3 $
+
+$ C \sim B(1, 0.7) $
 
 \newpage
 
@@ -145,7 +157,7 @@ What is the probability of having 2 on-time meals in a week (7 days)?
 
 $ X \sim B(7, 0.75) $
 
-$ P(X=2) = 0.01154 $
+$ P(X=2) = \binom{7}{2} \cdot 0.75^2 \cdot(1-0.75)^{7-2} = \binom{7}{2} \cdot 0.75^2 \cdot 0.25^5 = 21 \cdot 0.5625 \cdot 0.000976 = 0.01154 $
 
 \subsection*{b.}
 
