@@ -12,170 +12,168 @@
 
 \begin{document}
 
-    \maketitle
+\maketitle
 
-    \begin{center}
-        \section*{Question 1}
+\begin{center}
+\section*{Question 1}
 
-    \end{center}
-    Given a random sample $\lbrace x_1 , x_2 , ... , x_n \rbrace$, derive the
-    maximum likelihood estimator $\hat{p}$ of the Binomial distribution. \\
+\end{center}
+Given a random sample $\lbrace x_1 , x_2 , ... , x_n \rbrace$, derive the
+ maximum likelihood estimator $\hat{p}$ of the Binomial distribution. \\
 
-    \begin{center}
-        $ B(x,p) = \binom{n}{x} p^x (1-p)^{n-x}$
-    \end{center}
+\begin{center}
+$ B(x,p) = \binom{n}{x} p^x (1-p)^{n-x}$ 
+\end{center} 
 
-    We first want to calculate the likelihood: \\
+We first want to calculate the likelihood: \\
 
-    $ L = P(x_1,...x_n \mid p) =  \prod^{n}_{i = 1} P(x_i \mid p) $ \\
+$ L = P(x_1,...x_n \mid p) =  \prod^{n}_{i = 1} P(x_i \mid p) $ \\
 
-    $ =  \prod^{n}_{i = 1} \binom{n}{x_i} p^{x_i} (1-p)^{1-x_i} $ \\
+$ =  \prod^{n}_{i = 1} \binom{n}{x_i} p^{x_i} (1-p)^{1-x_i} $ \\
 
-    $ = \prod^{n}_{i = 1} p^{x_i} (1-p)^{1-x_i}  \prod^{n}_{i = 1} \binom{n}{x_i}  $ \\
+$ = \prod^{n}_{i = 1} p^{x_i} (1-p)^{1-x_i}  \prod^{n}_{i = 1} \binom{n}{x_i}  $ \\
 
-    $ = p^{\sum^{n}_{i = 1} x_i} (1-p)^{n - \sum^{n}_{i = 1} x_i}  \prod^{n}_{i = 1} \binom{n}{x_i} $ \\
+$ = p^{\sum^{n}_{i = 1} x_i} (1-p)^{n - \sum^{n}_{i = 1} x_i}  \prod^{n}_{i = 1} \binom{n}{x_i} $ \\
 
-    \newpage
+\newpage
 
-    From the likelihood we calculate the log-likelihood: \\
+From the likelihood we calculate the log-likelihood: \\
 
-    $ ln(L) = ln(p^{\sum^{n}_{i = 1} x_i} (1-p)^{n - \sum^{n}_{i = 1} x_i}  \prod^{n}_{i = 1} \binom{n}{x_i}) $ \\
+$ ln(L) = ln(p^{\sum^{n}_{i = 1} x_i} (1-p)^{n - \sum^{n}_{i = 1} x_i}  \prod^{n}_{i = 1} \binom{n}{x_i}) $ \\
 
-    $ =  ln(p^{\sum^{n}_{i = 1} x_i}) + ln( (1-p)^{n - \sum^{n}_{i = 1} x_i}) + ln(\prod^{n}_{i = 1} \binom{n}{x_i})  $ \\
+$ =  ln(p^{\sum^{n}_{i = 1} x_i}) + ln( (1-p)^{n - \sum^{n}_{i = 1} x_i}) + ln(\prod^{n}_{i = 1} \binom{n}{x_i})  $ \\
 
-    $ = ln(p) \sum^{n}_{i = 1} x_i + ln( 1-p) (n - \sum^{n}_{i = 1} x_i) +  \sum^{n}_{i = 1} ln(\binom{n}{x_i})$ \\
+$ = ln(p) \sum^{n}_{i = 1} x_i + ln( 1-p) (n - \sum^{n}_{i = 1} x_i) +  \sum^{n}_{i = 1} ln(\binom{n}{x_i})$ \\
 
-    We will take the derivative in respect to $p$ our given value: \\
+We will take the derivative in respect to $p$ our given value: \\
 
-    $\dfrac{\partial[ln(L) ]}{\partial p} = \dfrac{\partial[ ln(p) \sum^{n}_{i = 1} x_i  ]}{\partial p} + \dfrac{\partial[ ln( 1-p) (n - \sum^{n}_{i = 1} x_i)]}{\partial p} $ \\
+$\dfrac{\partial[ln(L) ]}{\partial p} = \dfrac{\partial[ ln(p) \sum^{n}_{i = 1} x_i  ]}{\partial p} + \dfrac{\partial[ ln( 1-p) (n - \sum^{n}_{i = 1} x_i)]}{\partial p} $ \\ 
 
-    $ = \dfrac{\sum^{n}_{i = 1} x_i  }{p} - \dfrac{ (n - \sum^{n}_{i = 1} x_i) }{1 - p} $ \\
+$ = \dfrac{\sum^{n}_{i = 1} x_i  }{p} - \dfrac{ (n - \sum^{n}_{i = 1} x_i) }{1 - p} $ \\
 
-    To find the a maximum we set the derivative to 0 obtaining: \\
+To find the a maximum we set the derivative to 0 obtaining: \\
 
-    $  \dfrac{\sum^{n}_{i = 1} x_i  }{\hat{p}} - \dfrac{ n - \sum^{n}_{i = 1} x_i }{1 - \hat{p}} = 0 $ \\
+$  \dfrac{\sum^{n}_{i = 1} x_i  }{\hat{p}} - \dfrac{ n - \sum^{n}_{i = 1} x_i }{1 - \hat{p}} = 0 $ \\
 
-    $ (1-\hat{p})\sum^{n}_{i = 1} x_i - \hat{p} (n - \sum^{n}_{i = 1} x_i) = 0 $ \\
+$ (1-\hat{p})\sum^{n}_{i = 1} x_i - \hat{p} (n - \sum^{n}_{i = 1} x_i) = 0 $ \\
 
-    $ \sum^{n}_{i = 1} x_i - \hat{p}\sum^{n}_{i = 1} x_i - \hat{p}n + \hat{p} \sum^{n}_{i = 1} x_i) = 0 $ \\
+$ \sum^{n}_{i = 1} x_i  - \hat{p}\sum^{n}_{i = 1} x_i - \hat{p}n + \hat{p} \sum^{n}_{i = 1} x_i) = 0 $ \\
 
-    $ \sum^{n}_{i = 1} x_i - \hat{p}n + = 0 $ \\
+$ \sum^{n}_{i = 1} x_i  - \hat{p}n + = 0 $ \\
 
-    $ \hat{p}n = \sum^{n}_{i = 1} x_i  $ \\
+$ \hat{p}n = \sum^{n}_{i = 1} x_i  $ \\
 
-    Thus we obtain:
+Thus we obtain: 
 
-    \begin{center}
-        $ \hat{p} = \dfrac{\sum^{n}_{i = 1} x_i}{n} $
-    \end{center}
+\begin{center}
+$ \hat{p} = \dfrac{\sum^{n}_{i = 1} x_i}{n} $
+\end{center}
 
 
 
-    \newpage
-    \begin{center}
-        \section*{Question 2}
-    \end{center}
+\newpage
+\begin{center}
+\section*{Question 2}
+\end{center}
 
-    \tab A student wants to know her chances to pass and fail an exam if she studies and if she doesn't study. From last year's results, she sees that $P(Pass) = 60\%$.
-    She also found out that
-    $P(Studied \mid Pass) = 95\%$,
-    $P(Studied \mid Failed) = 60\%$.
-    You can assume that every student either studied or didn't study, and either passed or failed.\\
+\tab A student wants to know her chances to pass and fail an exam if she studies and if she doesn't study.  From last year's results, she sees that $P(Pass) = 60\%$. 
+She also found out that 
+$P(Studied \mid Pass) = 95\%$, 
+$P(Studied \mid Failed) = 60\%$. 
+You can assume that every student either studied or didn't study, and either passed or failed.\\
 
-    $P(Failed) = 1 - P(Pass) = 1 - 0.6 = 0.4 $ \\
+$P(Failed) = 1 -  P(Pass) = 1 - 0.6 = 0.4 $ \\
 
-    $P(Studied) = P(Studied \mid Pass) P(Pass) + P(Studied \mid Failed) P(Failed)$
+$P(Studied) = P(Studied \mid Pass) P(Pass) +  P(Studied \mid Failed) P(Failed)$
 
-    $= 0.95 \cdot 0.6 + 0.6 \cdot 0.4= 0.81$ \\
+$= 0.95 \cdot 0.6 + 0.6 \cdot 0.4= 0.81$ \\
 
-    $P(\overline{Studied}) = 1 - P(Studied) = 1 - 0.81 = 0.19 $\\
+$P(\overline{Studied}) = 1 - P(Studied) = 1 - 0.81 = 0.19 $\\
 
-    $P(\overline{Studied} \mid Pass) = 1 - P(Studied \mid Pass) = 1 - 0.95 = 0.05$,
+$P(\overline{Studied} \mid Pass) = 1 - P(Studied \mid Pass) = 1 - 0.95 = 0.05$,
 
 
-    \subsection*{a.}
-    What is her probability of passing the exam if she studies?\\
+\subsection*{a.}
+What is her probability of passing the exam if she studies?\\
 
-    $P(Pass| Studied) = \dfrac{P(Studied \mid Pass)P(Pass)}{P(Studied)}$
-    $ =  \dfrac{0.95 \cdot 0.6}{0.81} = 0.7037 $
+$P(Pass| Studied) = \dfrac{P(Studied \mid Pass)P(Pass)}{P(Studied)}$ 
+$ =  \dfrac{0.95 \cdot 0.6}{0.81} = 0.7037 $
 
-    \subsection*{b.}
+\subsection*{b.}
 
-    What is her probability of passing if she doesn't study? \\
+What is her probability of passing if she doesn't study? \\
 
-    $P(Pass \mid \overline{Studied}) = \dfrac{P(\overline{Studied} \mid Pass)P(Pass)}{P(\overline{Studied})}$
-    $ =  \dfrac{0.05 \cdot 0.6}{0.19} = 0.1578 $
+$P(Pass \mid \overline{Studied}) = \dfrac{P(\overline{Studied} \mid Pass)P(Pass)}{P(\overline{Studied})}$
+$ =  \dfrac{0.05 \cdot 0.6}{0.19} = 0.1578 $
 
-    \newpage
+\newpage
 
-    \begin{center}
-        \section*{Question 3}`
-    \end{center}
-    Find 3 random variables $X, Y, C$ such that:\\
+\begin{center}
+\section*{Question 3}
+\end{center}
+Find 3 random variables $X, Y, C$ such that:\\
 
 
-    a) $X \perp Y \mid C $\\
+a) $X \perp Y \mid C $\\
 
-    b) $X$ and $Y$ are not independent \\
+b) $X$ and $Y$ are not independent \\
 
-    c) $X, Y$ are integers such that $3 \leq X, Y \leq 9$ and $C$ is binary.\\
+c) $X, Y$ are integers such that $3 \leq X, Y \leq 9$ and $C$ is binary.\\
 
-    d) The following conditions hold:
+d) The following conditions hold:
 
-    \tab i.  $ P(1 \leq X, \leq 5) = 0.4$
+\tab i.  $ P(1 \leq X, \leq 5) = 0.4$
 
-    \tab ii.  $ P(1 \leq Y, \leq 5) = 0.4$
+\tab ii.  $ P(1 \leq Y, \leq 5) = 0.4$
 
-    \tab iii.  $ P(C=0) = 0.3$\\
+\tab iii.  $ P(C=0) = 0.3$\\
 
-    Z is a random variable with the following distribution:
 
-    $ P(Z = 2) = \frac{1}{7} $
 
-    $ P(Z = 3) = \frac{3}{7} $
 
-    $ P(Z = 5) = \frac{3}{7} $
+$ A \sim B(1, \frac{6}{7}) $
 
+$ B \sim B(1, \frac{4}{7}) $
 
-    $ X = ZC + 3 $
+$ X = 5 + CA $
 
-    $ Y = \left \lfloor{\frac{2}{3}Z(2-C)}\right \rfloor + 3 $
+$ Y = 6 - CB $
 
-    $ C \sim B(1, 0.7) $
+$ C \sim B(1, 0.7) $
 
-    \newpage
+\newpage
 
-    \begin{center}
-        \section*{Question 4}
-    \end{center}
+\begin{center}
+\section*{Question 4}
+\end{center}
 
-    The probability of Wolt arriving on time is 0.75.
+The probability of Wolt arriving on time is 0.75.
 
-    \subsection*{a.}
+\subsection*{a.} 
 
-    What is the probability of having 2 on-time meals in a week (7 days)?
+What is the probability of having 2 on-time meals in a week (7 days)?
 
-    $ X \sim B(7, 0.75) $
+$ X \sim B(7, 0.75) $
 
-    $ P(X=2) = \binom{7}{2} \cdot 0.75^2 \cdot(1-0.75)^{7-2} = \binom{7}{2} \cdot 0.75^2 \cdot 0.25^5 = 21 \cdot 0.5625 \cdot 0.000976 = 0.01154 $
+$ P(X=2) = \binom{7}{2} \cdot 0.75^2 \cdot(1-0.75)^{7-2} = \binom{7}{2} \cdot 0.75^2 \cdot 0.25^5 = 21 \cdot 0.5625 \cdot 0.000976 = 0.01154 $
 
-    \subsection*{b.}
+\subsection*{b.}
 
-    What is the probability of having at least 4 on-time meals in a week? \\
+What is the probability of having at least 4 on-time meals in a week? \\
 
-    $ P(X \geq 4) =  1 - P(X \leq 3) = 1 - 0.07056 = 0.92944$
+$ P(X \geq 4) =  1 - P(X \leq 3) = 1 - 0.07056 = 0.92944$ 
 
-    \subsection*{c.}
+\subsection*{c.}
 
-    \tab A company of 100 employees recorded the number of on-time meals they had during a particular week and averaged their results. What do you expect the value of that average to be? \\
+\tab A company of 100 employees recorded the number of on-time meals they had during a particular week and averaged their results. What do you expect the value of that average to be? \\
 
-    Let $X_i \sim B(7, 0.75) $, \\
+Let $X_i \sim B(7, 0.75) $, \\
 
-    $Y = \sum_{i=1}^{100} X_i \sim B(7* 100, 0.75) $\\
+$Y = \sum_{i=1}^{100} X_i \sim B(7* 100, 0.75) $\\
 
-    Now we take the average as follows: \\
+Now we take the average as follows: \\
 
-    $E(\dfrac{Y}{100}) \stackrel{linearity}{=} \dfrac{E(Y)}{100} \stackrel{\text{binomial formula}}{=} \dfrac{7*100*0.75}{100}  = 5.25 $
+$E(\dfrac{Y}{100}) \stackrel{linearity}{=} \dfrac{E(Y)}{100} \stackrel{\text{binomial formula}}{=} \dfrac{7*100*0.75}{100}  = 5.25 $
 
-
+    
 \end{document}
