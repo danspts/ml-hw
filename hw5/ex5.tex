@@ -19,7 +19,7 @@
 \subsection*{a)}
 
 Let $K,L$ be two kernels (operating on the same space)and let $ \alpha, \beta $ be two positive scalars \\
-		Prove that $\alpha K + \beta L $ is a kernel.
+\tab Prove that $\alpha K + \beta L $ is a kernel.
 		
 \subsection*{b)}
 
@@ -33,6 +33,7 @@ $K - L$ is a kernel
 
 $K - L$ is not a kernel
 
+\newpage
 
 \section*{\centering{Question 2)}}
 
@@ -42,11 +43,86 @@ $K - L$ is not a kernel
 \tab Constraint: $g(x,y,z) = \frac{x^2}{\alpha^2} + \frac{y^2}{\beta^2} + \frac{z^2}{\beta^2} = 1$, where $ \alpha > \beta > 0$ 
 
 
+$$
+\bigtriangledown f = 
+\begin{bmatrix}
+\frac{\partial f}{\partial x} \\
+\frac{\partial f}{\partial y} \\
+\frac{\partial f}{\partial z} 
+\end{bmatrix} = 2
+\begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix}
+ $$
+ 
+$$
+\bigtriangledown g = 
+\begin{bmatrix}
+\frac{\partial g}{\partial x} \\
+\frac{\partial g}{\partial y} \\
+\frac{\partial g}{\partial z} 
+\end{bmatrix} = 2
+\begin{bmatrix}
+\frac{x}{\alpha^2} \\
+\frac{y}{\beta^2} \\
+\frac{z}{\beta^2}
+\end{bmatrix}
+ $$
+
+$$
+\bigtriangledown f  = \lambda\bigtriangledown g
+$$
+
+$$
+\iff \begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix}
+- \lambda
+\begin{bmatrix}
+\frac{x}{\alpha^2} \\
+\frac{y}{\beta^2} \\
+\frac{z}{\beta^2}
+\end{bmatrix}
+= 0
+ $$
+ 
+$$ \iff
+\begin{bmatrix}
+x(1 - \frac{\lambda}{\alpha^2} ) \\
+y(1 - \frac{\lambda}{\beta^2} ) \\
+z(1 - \frac{\lambda}{\beta^2} ) \\
+\end{bmatrix}
+= 0
+ $$ \\
+
+Notice that if $ x \neq 0 \Rightarrow \lambda = \alpha^2$ and if $ y \neq 0 \bigvee  z \neq 0 \Rightarrow \lambda = \beta^2$. Therefore:  $\alpha = \beta$ contradicting our constraint.
+
+Consider $x \neq 0$ :
+
+$$ \frac{x^2}{\alpha^2} + \frac{y^2}{\beta^2} + \frac{z^2}{\beta^2} = \frac{x^2}{\alpha^2} = 1 \iff x = \pm \alpha$$
+
+Consider $x = 0$ :
+
+$$ \frac{x^2}{\alpha^2} + \frac{y^2}{\beta^2} + \frac{z^2}{\beta^2} = 
+\frac{y^2}{\beta^2} + \frac{z^2}{\beta^2} = 1$$
+
+$$ y^2 + z^2 = \beta^2 $$ \\ 
+
+Notice: $\alpha > \beta > 0 \Rightarrow \alpha^2 > \beta^2$ \\
+
+Therefore we can define the maxima $f(\pm \alpha,0,0) = \alpha^2 $\\
+
+And minima $f(0,x,z) = y^2 + z^2 = \beta^2 $
+
 
 \section*{\centering{Question 3)}}
 
 
-\tab Let $X = \mathbb{R}^2$. Let $ C = H + \{h(a,b,c) = {(x,y,z) s.t. |x| \leq a, |y| \leq b, |z| \leq c} s.t. a,b,c \in \mathbb{R}_+\}$ the set of all origin centered boxes. \\
+\tab Let $X = \mathbb{R}^2$. Let $ C = H =  \lbrace h(a,b,c) = \lbrace(x,y,z) \mid |x| \leq a, |y| \leq b, |z| \leq c \rbrace \mid  a,b,c \in \mathbb{R}^+\rbrace $ the set of all origin centered boxes. \\
 \tab Describe the polynomial sample complexity algorithm $L$ that learns $C$ using $H$. State the time complexity and sample complexity of your suggested algorithm. Prove all your steps.
 
 
