@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.8)  10 JUN 2021 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.8)  10 JUN 2021 19:58
 entering extended mode
 **./ex5.tex
 (ex5.tex
@@ -118,20 +118,20 @@ File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 ) (ex5.aux)
 \openout1 = `ex5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 (D:\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -147,46 +147,64 @@ LaTeX Font Info:    ... okay on input line 14.
 \makeMPintoPDFobject=\count271
 \everyMPtoPDFconversion=\toks21
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
  (D:\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (D:\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
-{C:/Users/Liav/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Overfull \hbox (58.92854pt too wide) in paragraph at lines 65--66
-[]\OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12 X \OT1/cmr/m/n/12 = \U/msb/m/n/12 R[]$\
-OT1/cmr/m/n/12 . Let $\OML/cmm/m/it/12 C \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 H \
-OT1/cmr/m/n/12 + \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 h\OT1/cmr/m/n/12 (\OML/cmm/
-m/it/12 a; b; c\OT1/cmr/m/n/12 ) = []\OML/cmm/m/it/12 s:t:a; b; c \OMS/cmsy/m/n
-/12 2
  []
 
-[2] [3] (ex5.aux) ) 
+[1
+
+{C:/Users/Liav/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+[4] (ex5.aux) ) 
 Here is how much of TeX's memory you used:
- 2499 strings out of 479334
- 30981 string characters out of 2869360
- 327497 words of memory out of 3000000
- 19974 multiletter control sequences out of 15000+200000
- 410973 words of font info for 57 fonts, out of 3000000 for 9000
+ 2504 strings out of 479334
+ 31054 string characters out of 2869360
+ 331497 words of memory out of 3000000
+ 19978 multiletter control sequences out of 15000+200000
+ 412193 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,6n,74p,379b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr17.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr6.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ex5.pdf (3 pages, 88982 bytes).
+ 67i,7n,74p,222b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
+:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+12.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+>
+Output written on ex5.pdf (4 pages, 111397 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
