@@ -21,11 +21,20 @@
 \subsection*{a)}
 
 Let $K,L$ be two kernels (operating on the same space)and let $ \alpha, \beta $ be two positive scalars \\
-\tab Prove that $\alpha K + \beta L $ is a kernel.
+\tab Prove that $\alpha K + \beta L $ is a kernel.\\
 
-As $K(x,y) = \langle\varphi_{1}(x), \varphi_{1}(y)\rangle$, $L(x,y) = \langle\varphi_{2}(x)\, \varphi_{2}(y)\rangle$ (inner product,) \\
+\tab Linearity:
+
+As $K(x,y) = \langle\varphi_{1}(x), \varphi_{1}(y)\rangle$, $L(x,y) = \langle\varphi_{2}(x), \varphi_{2}(y)\rangle$ (inner product,) \\
 		then $\alpha K(x,y) + \beta L(x,y) = \alpha \cdot \langle \varphi_{1}(x),\varphi_{1}(y)\rangle + \beta \cdot \langle\varphi_{2}(x\,\varphi_{2}(y)\rangle $ \\
 		$ = \langle \alpha \cdot \varphi_{1}(x),\varphi_{1}(y)\rangle + \langle\beta \cdot\varphi_{2}(x),\varphi_{2}(y)\rangle $ by linearity of inner product\\
+		
+\tab Zero product:
+
+Let $\phi_1(x) =  \phi_1(y) \bigwedge \phi_2(x) =  \phi_2(y)$: 
+
+
+WLOG let $ \phi_1(x) =  \phi_2(x) = 0 $:
 		
 \subsection*{b)}
 
@@ -35,13 +44,7 @@ Provide (two different) examples of non-zero kernels $K,L$ (operating on the sam
 
 $K - L$ is a kernel
 
-\paragraph{\tab ii.}
-
-$K - L$ is not a kernel
-
-Suppose we are working over the space $\mathbb{R}$.
-		\begin{enumerate}
-			\item Let $K(x,y) = \varphi_1(x)\cdot\varphi_1(y)$ and $K(x,y) = \varphi_2(x)\cdot\varphi_2(y)$ \\
+Let $K(x,y) = \varphi_1(x)\cdot\varphi_1(y)$ and $L(x,y) = \varphi_2(x)\cdot\varphi_2(y)$ \\
 			Define $\varphi_1(x) = (2x, -4x^2)$ and $\varphi_2(x) = (x, x^2) $
 			Notice that $ K(x,y) - L(x,y) = \varphi_1(x)\cdot\varphi_1(y) - \varphi_2(x)\cdot\varphi_2(y) $ \\
 			$ = (2x, -4x^2)\cdot(2y, -4y^2) - (x, x^2)\cdot(y,y^2) $ \\
@@ -50,21 +53,25 @@ Suppose we are working over the space $\mathbb{R}$.
 			$ = 3(x \cdot y) + 15(x^2 \cdot y^2) $ \\
 			$ = 3x \cdot 3y + 15x^2 \cdot 15y^2 $ \\
 			This is a kernel with the mapping $ \varphi(x) = (3x, 15x) $.
-			\item Let $K(x,y) = \varphi_1(x)\cdot\varphi_1(y)$ and $K(x,y) = \varphi_2(x)\cdot\varphi_2(y)$ \\
-			Define $\varphi_1(x) = (x^4, x^2)$ and $\varphi_2(x) = (2x^4, -4x^2) $
-			Notice that $ K(x,y) - L(x,y) = \varphi_1(x)\cdot\varphi_1(y) - \varphi_2(x)\cdot\varphi_2(y) $ \\
-			$ = (x^4, x^2)\cdot(y^4,y^2) - (2x^4, -4x^2)\cdot(2y^4, -4y^2) $ \\
-			$ = x^4 \cdot y^4 + x^2 \cdot y^2 - 2x^4 \cdot 2y^4 - (-4x^2) \cdot (-4y^2) $ \\
-			$ = x^4 \cdot y^4 + x^2 \cdot y^2 - 2(x^4 \cdot y^4) - 4(x^2 \cdot y^2) $ \\
-			$ = -(x^4 \cdot y^4) - 3(x^2 \cdot y^2) $ \\
-			Notice that this is not a kernel. Proof: \\
-			ATC that this is a kernel. That means there exists a mapping $\varphi(x)$ \\
-			s.t. $ -(x^4 \cdot y^4) - 3(x^2 \cdot y^2) = \varphi(x) \cdot \varphi(y) $ \\
-			Notice that the left side is always negative. \\
-			However, by the basic properties of an inner product, then the right side must  $ \geq 0 $. \\
-			This means we have a inner product (that is always positive) equal a negative number, which is a contradiction!
-		\end{enumerate}
 
+\paragraph{\tab ii.}
+
+$K - L$ is not a kernel
+
+Let $K(x,y) = \varphi_1(x)\cdot\varphi_1(y)$ and $L(x,y) = \varphi_2(x)\cdot\varphi_2(y)$ \\
+Define $\varphi_1(x) = (x^4, x^2)$ and $\varphi_2(x) = (2x^4, -4x^2) $ \\
+Notice that $ K(x,y) - L(x,y) = \varphi_1(x)\cdot\varphi_1(y) - \varphi_2(x)\cdot\varphi_2(y) $ \\
+$$ = (x^4, x^2)\cdot(y^4,y^2) - (2x^4, -4x^2)\cdot(2y^4, -4y^2) $$ \\
+$ = x^4 \cdot y^4 + x^2 \cdot y^2 - 2x^4 \cdot 2y^4 - (-4x^2) \cdot (-4y^2) $ \\
+$ = x^4 \cdot y^4 + x^2 \cdot y^2 - 2(x^4 \cdot y^4) - 4(x^2 \cdot y^2) $ \\
+$ = -(x^4 \cdot y^4) - 3(x^2 \cdot y^2) $ \\
+Notice that this is not a kernel. Proof: \\
+ATC that this is a kernel. That means there exists a mapping $\varphi(x)$ \\
+s.t. $ -(x^4 \cdot y^4) - 3(x^2 \cdot y^2) = \varphi(x) \cdot \varphi(y) $ \\
+Notice that the left side is always negative. \\
+However, by the basic properties of an inner product, then the right side must  $ \geq 0 $. \\
+This means we have a inner product (that is always positive) equal a negative number, which is a contradiction!
+			
 \newpage
 
 \section*{\centering{Question 2)}}

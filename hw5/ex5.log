@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.8)  10 JUN 2021 19:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.27)  11 JUN 2021 12:29
 entering extended mode
-**./ex5.tex
-(ex5.tex
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ex5.tex
+(./ex5.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> xparse <2020-03-03>
-(D:\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2021-02-18>
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(D:\Programs\MiKTeX\tex/latex/base\size12.clo
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
@@ -21,24 +23,24 @@ File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(D:\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(D:\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(D:\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen139
 ))
-(D:\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
 )
-(D:\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count187
@@ -79,10 +81,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-(D:\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(D:\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -90,15 +92,15 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(D:\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(D:\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(D:\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -111,11 +113,12 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(D:\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
+ef
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count199
 \l__pdf_internal_box=\box49
-) (ex5.aux)
+) (./ex5.aux)
 \openout1 = `ex5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -133,7 +136,7 @@ LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 
-(D:\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(/usr/local/texlive/2021basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count266
 \scratchdimen=\dimen148
@@ -149,62 +152,86 @@ LaTeX Font Info:    ... okay on input line 15.
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
- (D:\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
-(D:\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 26--29
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
 [1
 
-{C:/Users/Liav/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
-
+{/usr/local/texlive/2021basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (0.94246pt too wide) in paragraph at lines 47--56
+\OT1/cmr/m/n/12 Define $\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x
+\OT1/cmr/m/n/12 ) = (2\OML/cmm/m/it/12 x; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 4
+\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )$ and $\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12
+ (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 x; x[]\OT1/cmr/m/n/12
+ )$ No-tice that $\OML/cmm/m/it/12 K\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y\OT1/
+cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 x; y\OT1/cmr/m/n/12 ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
-[4] (ex5.aux) ) 
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+[5] (./ex5.aux) ) 
 Here is how much of TeX's memory you used:
- 2504 strings out of 479334
- 31054 string characters out of 2869360
- 331497 words of memory out of 3000000
- 19978 multiletter control sequences out of 15000+200000
- 412193 words of font info for 61 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 67i,7n,74p,222b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
-:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on ex5.pdf (4 pages, 111397 bytes).
+ 2502 strings out of 480445
+ 31833 string characters out of 5892391
+ 328272 words of memory out of 5000000
+ 19797 multiletter control sequences out of 15000+600000
+ 412193 words of font info for 61 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 67i,7n,74p,220b,206s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021basic/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021basic/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021basic/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021basic/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ex5.pdf (5 pages, 105624 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
