@@ -20,30 +20,30 @@
 
 \subsection*{a)}
 
-Let $K,L$ be two kernels (operating on the same space)and let $ \alpha, \beta $ be two positive scalars \\
+Let $K,L$ be two kernels (operating on the same space $V$) and let $ \alpha, \beta $ be two positive scalars \\
 \tab Prove that $\alpha K + \beta L $ is a kernel.\\
 
-Let $\langle x,y \rangle_1 = \alpha K(x,y) + \beta L(x,y) $ \\
-We will show that $ \langle x,y \rangle_1 $ is a inner product by proving the four properties required to be an inner product operation. \\
+Let $\langle x,y \rangle_V = \alpha K(x,y) + \beta L(x,y) $ \\
+We will show that $ \langle x,y \rangle_V $ is a inner product by proving the four properties required to be an inner product operation. \\
 
 \tab Symmetry:
 
-$ \langle x,y \rangle_1 = \alpha K(x,y) + \beta L(x,y) $ \\
+$ \langle x,y \rangle_V = \alpha K(x,y) + \beta L(x,y) $ \\
 $ = \alpha K(y,x) + \beta L(y,x) $ by symmetry of inner products of $K$,$L$ \\
-$ = \langle y,x \rangle_1 $
+$ = \langle y,x \rangle_V $
 		
 \tab Additivity:
 
-$ \langle u_1 + u_2, v \rangle_1 = \alpha K(u_1 + u_2, v) + \beta L(u_1 + u_2, v) $ \\
+$ \langle u_1 + u_2, v \rangle_V = \alpha K(u_1 + u_2, v) + \beta L(u_1 + u_2, v) $ \\
 $ = \alpha (K(u_1, v) + K(u_2, v)) + \beta (L(u_1, v) + L(u_2, v)) $ as $K$,$L$ are inner products \\
 $ = (\alpha K(u_1, v) + \beta L(u_1, v)) + (\alpha K(u_2, v) + \beta L(u_2, v)) $ \\
-$ = \langle u_1, v \rangle_1 + \langle u_2, v \rangle_1 $
+$ = \langle u_1, v \rangle_V + \langle u_2, v \rangle_V $
 
 \tab Homogeneity
 
-$ \langle c\cdot u, v \rangle_1 = \alpha K(c\cdot u, v) + \beta L(c\cdot u, v) $ \\
+$ \langle c\cdot u, v \rangle_V = \alpha K(c\cdot u, v) + \beta L(c\cdot u, v) $ \\
 $ = \alpha \cdot c \cdot K(u, v) + \beta \cdot c \cdot L(u, v) $ as $K$,$L$ are inner products \\
-$ = c\cdot (\alpha K(u, v) + \beta L(u, v))  = c \cdot \langle u, v \rangle_1 $
+$ = c\cdot (\alpha K(u, v) + \beta L(u, v))  = c \cdot \langle u, v \rangle_V $
 
 \tab Positivity
 
@@ -51,14 +51,14 @@ $ \langle u, u \rangle_1 = \alpha K(u, u) + \beta L(u, u) $ \\
 As $K$, $L$ are inner products, then $K(u, u) \geq 0$ and $L(u, u) \geq 0$ \\
 As $\alpha,\beta > 0$ by the given assumption, then we can conclude that $ \langle u, u \rangle_1 \geq 0 $ as the right side is a sum and product of positive  numbers 
 
-Now to show that $ \langle u, u \rangle_1 = 0 $ iff $ u = 0 $. \\
-First assume that $ \langle u, u \rangle_1 = 0 $. \\
+Now to show that $ \langle u, u \rangle_V = 0 $ iff $ u = 0 $. \\
+First assume that $ \langle u, u \rangle_V = 0 $. \\
 Then, as $\alpha,\beta > 0$, the only way this can occur are if $ K(u, u) = L(u, u) = 0 $. \\ 
 As $K$, $L$ are inner products, this means that $ u = 0$. \\
 Now assume that $ u = 0 $. \\
-Notice that $ \langle u, u \rangle_1 = \alpha K(u, u) + \beta L(u, u) $. \\
+Notice that $ \langle u, u \rangle_V = \alpha K(u, u) + \beta L(u, u) $. \\
 As $K$, $L$ are inner products: \\
-$ \langle u, u \rangle_1 = \alpha \cdot 0 + \beta \cdot 0 $ \\
+$ \langle u, u \rangle_V = \alpha \cdot 0 + \beta \cdot 0 $ \\
 $ = 0 $ which proves the other direction.
 		
 \subsection*{b)}
@@ -188,6 +188,9 @@ And minima $f(0,x,z) = y^2 + z^2 = \beta^2 $
 
 \tab Let $X = \mathbb{R}^2$. Let $ C = H =  \lbrace h(a,b,c) = \lbrace(x,y,z) \mid |x| \leq a, |y| \leq b, |z| \leq c \rbrace \mid  a,b,c \in \mathbb{R}^+\rbrace $ the set of all origin centered boxes. \\
 \tab Describe the polynomial sample complexity algorithm $L$ that learns $C$ using $H$. State the time complexity and sample complexity of your suggested algorithm. Prove all your steps.
+
+
+$VC(H) = 4$
 
 
 \end{document}
