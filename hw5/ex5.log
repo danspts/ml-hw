@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.27)  11 JUN 2021 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.27)  19 JUN 2021 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -166,14 +166,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 [1
 
 {/usr/local/texlive/2021basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (0.94246pt too wide) in paragraph at lines 72--81
+Overfull \hbox (0.94246pt too wide) in paragraph at lines 51--60
 \OT1/cmr/m/n/12 Define $\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x
 \OT1/cmr/m/n/12 ) = (2\OML/cmm/m/it/12 x; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 4
 \OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )$ and $\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12
@@ -183,32 +183,37 @@ cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m
 /it/12 x; y\OT1/cmr/m/n/12 ) =
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 86--89
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-[5] (./ex5.aux) ) 
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+ []
+
+[6] (./ex5.aux) ) 
 Here is how much of TeX's memory you used:
  2502 strings out of 480445
  31833 string characters out of 5892391
@@ -221,17 +226,19 @@ Here is how much of TeX's memory you used:
 sfonts/cm/cmbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021basic/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021basic/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021basic/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021basic/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021basic/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ex5.pdf (5 pages, 107031 bytes).
+e1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021basic/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021basic/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021basic/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021basic/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021bas
+ic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ex5.pdf (6 pages, 125477 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

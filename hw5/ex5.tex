@@ -23,43 +23,22 @@
 Let $K,L$ be two kernels (operating on the same space $V$) and let $ \alpha, \beta $ be two positive scalars \\
 \tab Prove that $\alpha K + \beta L $ is a kernel.\\
 
-Let $\langle x,y \rangle_V = \alpha K(x,y) + \beta L(x,y) $ \\
-We will show that $ \langle x,y \rangle_V $ is a inner product by proving the four properties required to be an inner product operation. \\
+Let $K(x, x') = \langle \phi_1(x),  \phi_1(x') \rangle $
 
-\tab Symmetry:
+Let $L(x, x') = \langle \phi_2(x),  \phi_2(x') \rangle $
 
-$ \langle x,y \rangle_V = \alpha K(x,y) + \beta L(x,y) $ \\
-$ = \alpha K(y,x) + \beta L(y,x) $ by symmetry of inner products of $K$,$L$ \\
-$ = \langle y,x \rangle_V $
-		
-\tab Additivity:
+Let $M(x, x') =  \langle \phi(x),  \phi(x') \rangle $\\
 
-$ \langle u_1 + u_2, v \rangle_V = \alpha K(u_1 + u_2, v) + \beta L(u_1 + u_2, v) $ \\
-$ = \alpha (K(u_1, v) + K(u_2, v)) + \beta (L(u_1, v) + L(u_2, v)) $ as $K$,$L$ are inner products \\
-$ = (\alpha K(u_1, v) + \beta L(u_1, v)) + (\alpha K(u_2, v) + \beta L(u_2, v)) $ \\
-$ = \langle u_1, v \rangle_V + \langle u_2, v \rangle_V $
+Define the mapping $\phi(x) = (\sqrt{\alpha} \cdot \phi_1(x),  \sqrt{\beta} \cdot  \phi_2(x') ) $
 
-\tab Homogeneity
+$M(x, x') =  \langle (\sqrt{\alpha} \cdot \phi_1(x),  \sqrt{\beta} \cdot  \phi_2(x') ) ,  (\sqrt{\alpha} \cdot \phi_1(x),  \sqrt{\beta} \cdot  \phi_2(x') )  \rangle $
 
-$ \langle c\cdot u, v \rangle_V = \alpha K(c\cdot u, v) + \beta L(c\cdot u, v) $ \\
-$ = \alpha \cdot c \cdot K(u, v) + \beta \cdot c \cdot L(u, v) $ as $K$,$L$ are inner products \\
-$ = c\cdot (\alpha K(u, v) + \beta L(u, v))  = c \cdot \langle u, v \rangle_V $
+$=  \langle \sqrt{\alpha} \cdot \phi_1(x),  \sqrt{\alpha} \cdot \phi_1(x') \rangle + \langle \sqrt{\beta} \cdot \phi_2(x),  \sqrt{\beta} \cdot \phi_2(x') \rangle $
 
-\tab Positivity
 
-$ \langle u, u \rangle_1 = \alpha K(u, u) + \beta L(u, u) $ \\
-As $K$, $L$ are inner products, then $K(u, u) \geq 0$ and $L(u, u) \geq 0$ \\
-As $\alpha,\beta > 0$ by the given assumption, then we can conclude that $ \langle u, u \rangle_1 \geq 0 $ as the right side is a sum and product of positive  numbers 
+$= {\alpha} \cdot  \langle  \cdot \phi_1(x),   \cdot \phi_1(x') \rangle + {\beta} \cdot \langle \cdot \phi_2(x),  \cdot \phi_2(x') \rangle $
 
-Now to show that $ \langle u, u \rangle_V = 0 $ iff $ u = 0 $. \\
-First assume that $ \langle u, u \rangle_V = 0 $. \\
-Then, as $\alpha,\beta > 0$, the only way this can occur are if $ K(u, u) = L(u, u) = 0 $. \\ 
-As $K$, $L$ are inner products, this means that $ u = 0$. \\
-Now assume that $ u = 0 $. \\
-Notice that $ \langle u, u \rangle_V = \alpha K(u, u) + \beta L(u, u) $. \\
-As $K$, $L$ are inner products: \\
-$ \langle u, u \rangle_V = \alpha \cdot 0 + \beta \cdot 0 $ \\
-$ = 0 $ which proves the other direction.
+$$= {\alpha}  \cdot  K(x, x') +  {\beta} \cdot L(x, x') $$
 		
 \subsection*{b)}
 
@@ -180,17 +159,27 @@ Notice: $\alpha > \beta > 0 \Rightarrow \alpha^2 > \beta^2$ \\
 
 Therefore we can define the maxima $f(\pm \alpha,0,0) = \alpha^2 $\\
 
-And minima $f(0,x,z) = y^2 + z^2 = \beta^2 $
+And minima $f(0,y,z) = y^2 + z^2 = \beta^2 $
 
+(Must satisfy the set of solution $y^2 + z^2 = \beta^2 $ eg. $x = y = 0, z=\pm \beta$)
+
+\newpage
 
 \section*{\centering{Question 3)}}
 
 
 \tab Let $X = \mathbb{R}^2$. Let $ C = H =  \lbrace h(a,b,c) = \lbrace(x,y,z) \mid |x| \leq a, |y| \leq b, |z| \leq c \rbrace \mid  a,b,c \in \mathbb{R}^+\rbrace $ the set of all origin centered boxes. \\
-\tab Describe the polynomial sample complexity algorithm $L$ that learns $C$ using $H$. State the time complexity and sample complexity of your suggested algorithm. Prove all your steps.
+\tab Describe the polynomial sample complexity algorithm $L$ that learns $C$ using $H$. State the time complexity and sample complexity of your suggested algorithm. Prove all your steps. \\
 
 
-$VC(H) = 4$
+Let there be m points in our training set and define all the points as such:
+$$ p_i = (x_i, y_i, z_i ),  \forall 0 \geq i \geq  m $$
 
+Define 
+
+$$  \pi(\lbrace D \in X^m \mid Err(L(D), c) > \varepsilon  \rbrace)  \leq  \sum^6_{i = 1}(\pi(X - B_i ))^m $$  
+We get by union bound:
+$$ \leq  6 (1 - \frac{\varepsilon}{6})$$
+$$ \leq  6 e^{\frac{m \varepsilon}{6}}$$
 
 \end{document}
